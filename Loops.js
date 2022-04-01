@@ -20,13 +20,18 @@ for (let i = 0; i <= 10; i++ ){
 
 }
 
-for(let i = 1; i< 10; i++){
+for(let i = 1; i< 5; i++){
     var output = "";
     for(let j = 0; j< i; j++){
         output += i;
+        console.log("J:" + j);
+
     }
     console.log(output);
+    console.log("i:" + i);
 }
+
+
 
 for(let i = 100; i>= 5; i-=5){
     console.log(i);

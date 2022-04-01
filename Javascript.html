@@ -106,5 +106,26 @@ do(condition) { //body <br>
     // body
     }
 </h4>
+
+<h2>BOM - browser object model</h2>
+<h4>: allows user to interact with web browser <br>
+    System Dialogs: <br>
+    alert(); confirm(); prompt(); <br>
+    Intervals and Timeouts: <br>
+    setInterval(); <br>
+    "use strict" <br>
+    var count = 0; <br>
+    var max = 5; <br>
+    var interval = 1000 (1s = 1000ms) <br>
+
+    var setInterval1s = setInterval(function () { <br>
+    if( count >= max){ <br>
+    clearInterval(setInterval1s); <br>
+    console.log('Done'); <br>
+    } else { <br>
+    count++; <br>
+    console.log('Repeating this line: ' + count); <br>
+    }, interval); <br>
+</h4>
 </body>
 </html>
