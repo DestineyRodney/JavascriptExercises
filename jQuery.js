@@ -108,3 +108,8 @@ $('h1').dblclick(function(e){
 $('#codeup').click(function (){
     alert($(this).html('New Code'));
 });
+
+$('#codeup').click(function(e){
+    e.preventDefault();
+
+})
