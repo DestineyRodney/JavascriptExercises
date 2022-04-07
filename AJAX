@@ -1,0 +1,46 @@
+JSON Javascript Object Notation
+:data interchange format easy for humans to read/write
+
+// empty object in json form
+{}
+
+// empty array in json form
+[]
+
+Objects in JSON form must be double quoted strings and properties are separated b y commas
+{
+"name1", "val1",
+"name2", "val2"
+}
+
+The value of a property can be one of the following:
+
+A quoted string
+A number
+An object
+An array
+true or false
+null
+
+ex
+{
+    "stringProp": "stringValue",
+    "numberProp": 1,
+    "objectProp": {
+        "prop": "value"
+    },
+    "arrayProp" : ["item1", "item2"],
+    "arrayOfObjectsProp" : [
+        {
+            "prop": "value"
+        },
+        {
+            "prop": "value"
+        }
+    ],
+    "boolProp"  : true,
+    "nullProp"  : null
+}
+
+AJAX REQUEST
+:way to communicate w a server, sending or retrieving data without refrshing cureent web browser
