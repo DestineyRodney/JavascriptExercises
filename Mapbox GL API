@@ -1,0 +1,14 @@
+:an API to create interactive mapson web page using WebGL
+:Mapbox GL JS is a client-side JavaScript library for building web maps and web applications with Mapbox's modern mapping technology.
+GENERATE MAPBOX API
+
+The Map class
+The mapboxgl.Map class is the basis of every Mapbox GL JS project.
+
+mapboxgl.accessToken = '<your access token here>';
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
