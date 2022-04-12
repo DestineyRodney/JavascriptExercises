@@ -19,9 +19,21 @@ function getRandomCocktail (){
 
 getRandomCocktail();
 
-function renderCocktails (cocktailData){
-    cocktailData.forEach( (cocktail) => {
+function renderCocktails (cocktail){
+console.log(cocktail);
+console.log(cocktail.drinks[0]);
+console.log(cocktail.drinks.length);
+let drinkSection = document.getElementById('allCocktails');
+    let drinkName = document.createElement('li');
+    let img
+    for(i = 0; i < cocktail.drinks.length; i++) {
         console.log(cocktail.drinks[i].strDrink);
-    })
+        drinkName.textContent = cocktail.drinks[i].strDrink;
+    $('#allCocktails').append(`<h1>Name: ${cocktail.drinks[i].strDrink}</h1> <br>  
+<h3> Id: ${cocktail.drinks[i].idDrink} </h3> <br> <img class="img" src =${cocktail.drinks[i].strDrinkThumb}><br>
+`)    }
+
 }
+
+
 
